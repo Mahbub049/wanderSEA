@@ -1,7 +1,13 @@
+import Banner from "../Banner/Banner";
+import Navbar from "../Navbar/Navbar";
+
 const Home = () => {
     return (
         <div>
-            <h2>Working</h2>
+            <div className="container mx-auto">
+                <Navbar></Navbar>
+                <Banner></Banner>
+            </div>
         </div>
     );
 };
