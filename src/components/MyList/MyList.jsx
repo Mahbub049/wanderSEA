@@ -35,7 +35,7 @@ const MyList = () => {
                             </thead>
                             <tbody>
                             {
-                                item.map(i=><ListCard key={i._id} item={i}></ListCard>)
+                                item.map(i=><ListCard key={i._id} items={item} setItem={setItem} item={i}></ListCard>)
                             }
                             </tbody>
                         </table>
