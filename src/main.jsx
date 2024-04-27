@@ -12,6 +12,7 @@ import AuthProvider from './components/Providers/AuthProvider';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import AddSpot from './components/AddSpot/AddSpot';
+import AllSpots from './components/AllSpots/AllSpots';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,13 @@ const router = createBrowserRouter([
       {
         path: '/addspot',
         element: <AddSpot></AddSpot>
+      },
+      {
+        path: '/allspots',
+        element: <AllSpots></AllSpots>,
+        loader: ()=>{
+          
+        }
       }
     ]
   },

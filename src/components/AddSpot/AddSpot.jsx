@@ -1,4 +1,5 @@
 import Navbar from "../Navbar/Navbar";
+import Swal from 'sweetalert2'
 import { useForm } from "react-hook-form"
 import { AuthContext } from "../Providers/AuthProvider";
 import { useContext } from "react";
@@ -20,7 +21,27 @@ const AddSpot = () => {
         formState: { errors },
       } = useForm()
 
-      const onSubmit = (data) => console.log(data)
+      const onSubmit = (data) => {
+        const {avg_cost, country, description, email, image, location, name, seasonality, spotname, travel, visitors
+        } = data;
+
+        fetch('http://localhost:5000/addspot', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(res=>res.json())
+        .then(data=>{
+            Swal.fire({
+                title: 'Success!',
+                text: 'Successfully Added',
+                icon: 'success',
+                confirmButtonText: 'Okay'
+              })
+        })
+      }
 
     return (
         <div>
