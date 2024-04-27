@@ -13,6 +13,8 @@ import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import AddSpot from './components/AddSpot/AddSpot';
 import AllSpots from './components/AllSpots/AllSpots';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import SpotDetails from './components/AllSpots/SpotCard/SpotDetails/SpotDetails';
 
 const router = createBrowserRouter([
   {
@@ -33,14 +35,17 @@ const router = createBrowserRouter([
       },
       {
         path: '/addspot',
-        element: <AddSpot></AddSpot>
+        element: <PrivateRoute><AddSpot></AddSpot></PrivateRoute>
       },
       {
         path: '/allspots',
         element: <AllSpots></AllSpots>,
-        loader: ()=>{
-          
-        }
+        loader: ()=>fetch('http://localhost:5000/addspot')
+      },
+      {
+        path: '/allspots/:id',
+        element:<PrivateRoute><SpotDetails></SpotDetails></PrivateRoute>,
+        loader: ({params})=>fetch(`http://localhost:5000/addspot/${params.id}`)
       }
     ]
   },

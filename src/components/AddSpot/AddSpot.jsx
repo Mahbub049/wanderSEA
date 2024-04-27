@@ -22,8 +22,8 @@ const AddSpot = () => {
       } = useForm()
 
       const onSubmit = (data) => {
-        const {avg_cost, country, description, email, image, location, name, seasonality, spotname, travel, visitors
-        } = data;
+        // const {avg_cost, country, description, email, image, location, name, seasonality, spotname, travel, visitors
+        // } = data;
 
         fetch('http://localhost:5000/addspot', {
             method: 'POST',
