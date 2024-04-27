@@ -14,7 +14,7 @@ const Navbar = () => {
         .then(()=>{})
         .catch(()=>{})
     }
-    console.log(user)
+    // console.log(user)
     const lists = 
     <>
         <li><NavLink to={'/'}>Home</NavLink></li>
@@ -35,7 +35,7 @@ const Navbar = () => {
                     {lists}
                 </ul>
                 </div>
-                <Link to={'/'} className="btn btn-ghost  lg:text-3xl font-bold text-[#0c7acd] pl-0 md: pl-4 lg:pl-4">
+                <Link to={'/'} className="btn btn-ghost  lg:text-3xl font-bold text-[#0c7acd] pl-0 md: pl-4 lg:pl-4 mons">
                     <GiWaveCrest className="hidden lg:flex"></GiWaveCrest>
                     WanderSEA
                 </Link>
