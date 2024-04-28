@@ -17,11 +17,13 @@ import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import SpotDetails from './components/AllSpots/SpotCard/SpotDetails/SpotDetails';
 import MyList from './components/MyList/MyList';
 import Update from './components/Update/Update';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
