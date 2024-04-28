@@ -52,7 +52,7 @@ const ListCard = ({item, items, setItem}) => {
                 </td>
                 <td>{country}</td>
                 <th>
-                <Link to={'/update'} className="btn bg-[#5092da] btn-ghost text-white">Update</Link>
+                <Link to={`/update/${_id}`} className="btn bg-[#5092da] btn-ghost text-white">Update</Link>
                 </th>
                 <th>
                 <button onClick={()=>handleDelete(_id)} className="btn bg-[#5092da] btn-ghost text-white">Delete</button>
