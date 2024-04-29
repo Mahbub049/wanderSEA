@@ -19,6 +19,7 @@ import MyList from './components/MyList/MyList';
 import Update from './components/Update/Update';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import CountryAdd from './components/CountryAdd';
+import CountryRoute from './components/CountryRoute/CountryRoute';
 
 const router = createBrowserRouter([
   {
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
         path: '/update/:id',
         element: <PrivateRoute><Update></Update></PrivateRoute>,
         loader: ({params})=> fetch(`http://localhost:5000/addspot/${params.id}`)
+      },
+      {
+        path: '/country/:country',
+        element: <CountryRoute></CountryRoute>
       }
     ]
   },
