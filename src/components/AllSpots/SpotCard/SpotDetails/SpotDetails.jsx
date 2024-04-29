@@ -70,7 +70,7 @@ const SpotDetails = () => {
                                     </div>
                                     <div className="flex flex-1 gap-2 items-center bg-[#0c7acd] text-white px-4 py-2 rounded-lg font-semibold">
                                     <TiWeatherCloudy className="text-xl"></TiWeatherCloudy>
-                                    <p>Seasons: {seasonality}</p>
+                                    <p>Seasonality: {seasonality}</p>
                                     </div>
                                     <div className="flex gap-2 items-center bg-[#0c7acd] text-white px-4 py-2 rounded-lg font-semibold">
                                         <FaRegEye className="text-xl"></FaRegEye>

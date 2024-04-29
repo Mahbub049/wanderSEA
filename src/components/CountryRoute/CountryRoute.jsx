@@ -3,6 +3,7 @@ import Footer from "../Footer/Footer";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import SpotCard from "../AllSpots/SpotCard/SpotCard";
+import CountrySpotCards from "./CountrySpotCards/CountrySpotCards";
 
 const CountryRoute = () => {
     const {country} = useParams();
@@ -26,7 +27,7 @@ const CountryRoute = () => {
                 </div>
                 <div className="mx-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {
-                    spots.map(spot=><SpotCard key={spots._id} spot={spot}></SpotCard>)
+                    spots.map(spot=><CountrySpotCards key={spots._id} spot={spot}></CountrySpotCards>)
                 }
                 </div>
             <Footer></Footer>

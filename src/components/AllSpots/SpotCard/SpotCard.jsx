@@ -44,7 +44,7 @@ const SpotCard = ({spot}) => {
                     </div>
                     <div className="flex gap-2 items-center">
                         <TiWeatherCloudy className="text-xl"></TiWeatherCloudy>
-                        <p><span className="font-semibold">Seasons:</span> {seasonality}</p>
+                        <p><span className="font-semibold">Seasonality:</span> {seasonality}</p>
                     </div>
                 </div>
                 <hr />
