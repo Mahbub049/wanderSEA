@@ -12,6 +12,7 @@ import { SiCashapp } from "react-icons/si";
 import { TiWeatherCloudy } from "react-icons/ti";
 import { MdCardTravel } from "react-icons/md";
 import { FaRegEye } from "react-icons/fa";
+import Footer from "../Footer/Footer";
 
 const AddSpot = () => {
     const {user} = useContext(AuthContext);
@@ -21,7 +22,7 @@ const AddSpot = () => {
         formState: { errors },
       } = useForm()
 
-      const onSubmit = (data) => {
+      const onSubmit = (data, e) => {
         // const {avg_cost, country, description, email, image, location, name, seasonality, spotname, travel, visitors
         // } = data;
 
@@ -40,6 +41,7 @@ const AddSpot = () => {
                 icon: 'success',
                 confirmButtonText: 'Okay'
               })
+              e.target.reset();
         })
       }
 
@@ -183,6 +185,7 @@ const AddSpot = () => {
                         <button className="btn btn-wide w-full text-white font-semibold text-xl bg-[#0c7acd]">Add</button>
                     </form>
                 </div>
+                <Footer></Footer>
             </div>
         </div>
     );

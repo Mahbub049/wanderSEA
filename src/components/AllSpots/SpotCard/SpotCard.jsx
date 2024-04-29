@@ -12,7 +12,8 @@ const SpotCard = ({spot}) => {
     const {_id, avg_cost, description, image, location, seasonality, spotname, travel, visitors} = spot;
     // console.log(spot)
     return (
-        <div className="card bg-base-100 shadow-xl transform hover:scale-105 transition-transform duration-300 relative poppins">
+        <div>
+            <div className="card bg-base-100 shadow-xl transform hover:scale-105 transition-transform duration-300 relative poppins">
             <figure><img className="w-full object-cover h-[280px]" src={image} alt="Shoes" /></figure>
             <div className={`absolute right-3 top-3 bg-[#5092da] px-2 py-1 text-white uppercase`}>
                 <div className="flex gap-2 items-center">
@@ -50,6 +51,7 @@ const SpotCard = ({spot}) => {
                 <div className="card-actions justify-end my-6">
                     <Link to={`/allspots/${_id}`} className="btn bg-[#5092da] text-white w-full">View Details</Link>
                 </div>
+            </div>
             </div>
         </div>
     );

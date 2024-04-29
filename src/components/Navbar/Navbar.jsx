@@ -73,9 +73,16 @@ const Navbar = () => {
                         <div className="tooltip" data-tooltip-id="my-tooltip" data-tooltip-content={user.displayName} data-tooltip-place="left">
                             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                                 <div className="w-10 rounded-full">
-                                <Link to={'/profile'}>
+                                <div>
                                     <img referrerpolicy="no-referrer" alt="User" src={user.photoURL? user.photoURL : <FaRegUserCircle />} />
-                                </Link>
+                                    <div tabIndex={0} className="mt-3 z-10 card card-compact dropdown-content w-64 bg-base-100 shadow">
+                                        <div className="card-body">
+                                        <img alt="User" className="w-[20px] rounded-full" src={user.photoURL? user.photoURL : <FaRegUserCircle />} />
+                                        <span className="font-bold text-lg">{user.displayName}</span>
+                                        <span className="text-info">{user.email}</span>
+                                    </div>
+                                </div>
+                                </div>
                                 </div>
                             </div>
                         </div>

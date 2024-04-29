@@ -8,6 +8,7 @@ import { MdCardTravel } from "react-icons/md";
 import { LuBath } from "react-icons/lu";
 import { TiWeatherCloudy } from "react-icons/ti";
 import { FaRegEye } from "react-icons/fa";
+import Footer from "../../../Footer/Footer";
 
 const SpotDetails = () => {
     const spot = useLoaderData();
@@ -86,7 +87,7 @@ const SpotDetails = () => {
                         </div>
                     </div>
                 </div>
-                {/* <Footer></Footer> */}
+                <Footer></Footer>
             </div>
         </div>
     );

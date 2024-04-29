@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import { AuthContext } from "../Providers/AuthProvider";
 import ListCard from "./ListCard/ListCard";
+import Footer from "../Footer/Footer";
 
 const MyList = () => {
     const {user} = useContext(AuthContext);
@@ -41,6 +42,7 @@ const MyList = () => {
                         </table>
                     </div>
                 </div>
+                <Footer></Footer>
             </div>
         </div>
     );

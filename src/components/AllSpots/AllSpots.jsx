@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import { useState } from "react";
 import SpotCard from "./SpotCard/SpotCard";
+import Footer from "../Footer/Footer";
 
 const AllSpots = () => {
     const loadedSpots = useLoaderData();
@@ -18,6 +19,7 @@ const AllSpots = () => {
                     spots.map(spot=><SpotCard key={spots._id} spot={spot}></SpotCard>)
                 }
                 </div>
+            <Footer></Footer>
             </div>
         </div>
     );

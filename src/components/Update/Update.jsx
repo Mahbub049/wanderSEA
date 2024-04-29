@@ -13,6 +13,7 @@ import { TiWeatherCloudy } from "react-icons/ti";
 import { MdCardTravel } from "react-icons/md";
 import { FaRegEye } from "react-icons/fa";
 import { useLoaderData } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 const Update = () => {
     const spot = useLoaderData();
@@ -187,6 +188,7 @@ const Update = () => {
                         <button className="btn btn-wide w-full text-white font-semibold text-xl bg-[#0c7acd]">Update</button>
                     </form>
                 </div>
+                <Footer></Footer>
             </div>
         </div>
     );
