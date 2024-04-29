@@ -18,6 +18,7 @@ import SpotDetails from './components/AllSpots/SpotCard/SpotDetails/SpotDetails'
 import MyList from './components/MyList/MyList';
 import Update from './components/Update/Update';
 import ErrorPage from './components/ErrorPage/ErrorPage';
+import CountryAdd from './components/CountryAdd';
 
 const router = createBrowserRouter([
   {

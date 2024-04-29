@@ -34,7 +34,7 @@ const SpotCard = ({spot}) => {
                 <h2 className="text-2xl font-bold">{spotname}</h2>
                 {/* <p>{description}</p> */}
                 {
-                    description.length>100 ? <p>{description.slice(0,100)}...</p> : <p>{description}</p>
+                    description.length>120 ? <p>{description.slice(0,120)}...</p> : <p>{description}</p>
                 }
                 <hr className="mt-4" />
                 <div className="flex flex-col gap-2">
