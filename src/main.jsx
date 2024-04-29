@@ -54,6 +54,11 @@ const router = createBrowserRouter([
         loader: ({params})=>fetch(`http://localhost:5000/addspot/${params.id}`)
       },
       {
+        path: '/allspots/sorted',
+        element: <AllSpots></AllSpots>,
+        loader: ()=>fetch('http://localhost:5000/allspots/sorted')
+      },
+      {
         path: '/mylist',
         element: <PrivateRoute><MyList></MyList></PrivateRoute>
       },

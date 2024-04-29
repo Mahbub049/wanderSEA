@@ -25,7 +25,7 @@ const AddSpot = () => {
       const onSubmit = (data, e) => {
         // const {avg_cost, country, description, email, image, location, name, seasonality, spotname, travel, visitors
         // } = data;
-
+        data.avg_cost = parseInt(data.avg_cost);
         fetch('http://localhost:5000/addspot', {
             method: 'POST',
             headers: {
@@ -145,7 +145,7 @@ const AddSpot = () => {
                             </div>
                             <label className="input input-bordered input-info flex items-center gap-2">
                                 <SiCashapp className="text-blue-500" />
-                                <input {...register("avg_cost", { required: true })} type="text" className="grow" placeholder="Average Cost" />
+                                <input {...register("avg_cost", { required: true })} type="number" className="grow" placeholder="Average Cost" />
                                 {errors.avg_cost && <span>This field is required</span>}
                             </label>
                         </div>
