@@ -24,22 +24,22 @@ const Footer = () => {
                         <nav>
                             <h6 className="footer-title text-lg text-[#0c7acd]">Company</h6> 
                             <a className="link link-hover">About</a>
-                            <Link to={'/blog'} className="link link-hover">Blog</Link>
-                            <Link to={'/#estates'} className="link link-hover">Estates</Link>
-                            <Link to={'/contact'} className="link link-hover">Contact Us</Link>
+                            <Link to={'/allspots'} className="link link-hover">Spots</Link>
+                            <Link to={'/addspots'} className="link link-hover">Add Spots</Link>
+                            <Link to={'/#contact'} className="link link-hover">Contact Us</Link>
                         </nav> 
                         <nav>
                             <h6 className="footer-title text-lg text-[#0c7acd]">Services</h6> 
                             <Link to={'/login'} className="link link-hover">Login</Link>
                             <Link to={'/register'} className="link link-hover">Register</Link>
-                            <Link to={'/profileUpdate'} className="link link-hover">Update Profile</Link>
+                            <Link to={'/mylist'} className="link link-hover">My List</Link>
                             <a className="link link-hover">Terms and Conditions</a>
                         </nav> 
                         <nav>
                             <h6 className="footer-title text-lg text-[#0c7acd]">Customer Care</h6> 
                             <a className="link link-hover">My Account</a>
-                            <a className="link link-hover">Wish List</a>
-                            <a className="link link-hover">Order Tracking</a>
+                            <a className="link link-hover">Hotels</a>
+                            <a className="link link-hover">Offers</a>
                             <a className="link link-hover">FAQ</a>
                         </nav> 
                         <form>

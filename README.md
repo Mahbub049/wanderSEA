@@ -1,8 +1,15 @@
-# React + Vite
+# WanderSEA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Explore the beauty of Southeast Asia with WanderSEA, your ultimate travel companion.
 
-Currently, two official plugins are available:
+## Live Site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Visit [WanderSEA](#) to start exploring Southeast Asia!
+
+## Features
+
+- **Discover Southeast Asia:** Wander through the captivating landscapes and vibrant cultures of Southeast Asia's diverse countries.
+- **Comprehensive Tourist Spot Listings:** Explore detailed information and stunning visuals of famous tourist spots in Bangladesh, Thailand, Indonesia, Malaysia, Vietnam, and Cambodia.
+- **Interactive Map Integration:** Navigate through each country's top attractions with interactive maps highlighting key tourist destinations.
+- **Personalized Travel Guides:** Plan your journey with personalized travel guides, including visa information, currency exchange rates, and local customs.
+- **User Engagement:** Share your travel experiences, tips, and recommendations with fellow adventurers through integrated social media platforms.

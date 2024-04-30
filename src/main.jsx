@@ -18,8 +18,9 @@ import SpotDetails from './components/AllSpots/SpotCard/SpotDetails/SpotDetails'
 import MyList from './components/MyList/MyList';
 import Update from './components/Update/Update';
 import ErrorPage from './components/ErrorPage/ErrorPage';
-import CountryAdd from './components/CountryAdd';
+// import CountryAdd from './components/CountryAdd';
 import CountryRoute from './components/CountryRoute/CountryRoute';
+// import PublicRoute from './components/PublicRoute';
 
 const router = createBrowserRouter([
   {
@@ -46,17 +47,17 @@ const router = createBrowserRouter([
       {
         path: '/allspots',
         element: <AllSpots></AllSpots>,
-        loader: ()=>fetch('http://localhost:5000/addspot')
+        loader: ()=>fetch('https://wandersea-server.vercel.app/addspot')
       },
       {
         path: '/allspots/:id',
         element:<PrivateRoute><SpotDetails></SpotDetails></PrivateRoute>,
-        loader: ({params})=>fetch(`http://localhost:5000/addspot/${params.id}`)
+        loader: ({params})=>fetch(`https://wandersea-server.vercel.app/addspot/${params.id}`)
       },
       {
         path: '/allspots/sorted',
         element: <AllSpots></AllSpots>,
-        loader: ()=>fetch('http://localhost:5000/allspots/sorted')
+        loader: ()=>fetch('https://wandersea-server.vercel.app/allspots/sorted')
       },
       {
         path: '/mylist',
@@ -65,7 +66,7 @@ const router = createBrowserRouter([
       {
         path: '/update/:id',
         element: <PrivateRoute><Update></Update></PrivateRoute>,
-        loader: ({params})=> fetch(`http://localhost:5000/addspot/${params.id}`)
+        loader: ({params})=> fetch(`https://wandersea-server.vercel.app/addspot/${params.id}`)
       },
       {
         path: '/country/:country',

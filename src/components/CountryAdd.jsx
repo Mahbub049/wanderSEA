@@ -11,7 +11,7 @@ const CountryAdd = () => {
         // const {avg_cost, country, description, email, image, location, name, seasonality, spotname, travel, visitors
         // } = data;
 
-        fetch('http://localhost:5000/countries', {
+        fetch('https://wandersea-server.vercel.app/countries', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

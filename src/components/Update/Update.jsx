@@ -30,7 +30,7 @@ const Update = () => {
         // } = data;
         data.avg_cost = parseInt(data.avg_cost);
 
-        fetch(`http://localhost:5000/update/${_id}`, {
+        fetch(`https://wandersea-server.vercel.app/update/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

@@ -9,7 +9,7 @@ const CountryRoute = () => {
     const {country} = useParams();
     const [spots, setSpots] = useState([]);
     useEffect(()=>{
-        fetch(`http://localhost:5000/myspots/${country}`)
+        fetch(`https://wandersea-server.vercel.app/myspots/${country}`)
         .then(res=>res.json())
         .then(data=>{
             setSpots(data);

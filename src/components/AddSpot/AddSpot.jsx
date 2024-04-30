@@ -26,7 +26,7 @@ const AddSpot = () => {
         // const {avg_cost, country, description, email, image, location, name, seasonality, spotname, travel, visitors
         // } = data;
         data.avg_cost = parseInt(data.avg_cost);
-        fetch('http://localhost:5000/addspot', {
+        fetch('https://wandersea-server.vercel.app/addspot', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

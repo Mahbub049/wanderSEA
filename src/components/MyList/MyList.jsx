@@ -8,7 +8,7 @@ const MyList = () => {
     const {user} = useContext(AuthContext);
     const [item, setItem] = useState([]);
     useEffect(()=>{
-        fetch(`http://localhost:5000/mycart/${user?.email}`)
+        fetch(`https://wandersea-server.vercel.app/myspotsemail/${user?.email}`)
         .then(res=>res.json())
         .then(data=>{
             setItem(data);

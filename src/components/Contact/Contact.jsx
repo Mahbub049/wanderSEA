@@ -14,7 +14,7 @@ const Contact = () => {
       } = useForm()
 
       const onSubmit = (data, e) => {
-        fetch('http://localhost:5000/contact', {
+        fetch('https://wandersea-server.vercel.app/contact', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

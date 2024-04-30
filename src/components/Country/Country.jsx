@@ -5,7 +5,7 @@ import CountryCard from "./CountryCard/CountryCard";
 const Country = () => {
     const [countries, setCountries] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/countries')
+        fetch('https://wandersea-server.vercel.app/countries')
         .then(res=>res.json())
         .then(data=>setCountries(data))
     },[])

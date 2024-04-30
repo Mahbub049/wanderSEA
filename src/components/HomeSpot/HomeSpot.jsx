@@ -1,10 +1,12 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import SpotCard from "../AllSpots/SpotCard/SpotCard";
+import { AuthContext } from "../Providers/AuthProvider";
 
 const HomeSpot = () => {
     const [spots, setSpots] = useState([]);
+    
     useEffect(()=>{
-        fetch('http://localhost:5000/addspot')
+        fetch('https://wandersea-server.vercel.app/addspot')
         .then(res=>res.json())
         .then(data=>{
             setSpots(data);
