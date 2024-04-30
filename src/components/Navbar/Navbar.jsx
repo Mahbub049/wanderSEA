@@ -39,8 +39,11 @@ const Navbar = () => {
             <li><NavLink to={'/addspot'}>Add Tourists Spot</NavLink></li>
             <li><NavLink to={`/mylist`}>My List</NavLink></li></>
         }
-        <li><NavLink className="lg:hidden" to={'/login'}>Login</NavLink></li>
-        <li><NavLink className="lg:hidden" to={'/register'}>Register</NavLink></li>
+        {!user && <>
+            <li><NavLink className="lg:hidden" to={'/login'}>Login</NavLink></li>
+            <li><NavLink className="lg:hidden" to={'/register'}>Register</NavLink></li></>
+        }
+        
     </>
     return (
         <div className="navbar bg-base-100 mt-6 ">
