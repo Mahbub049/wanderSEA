@@ -38,9 +38,9 @@ const Contact = () => {
             <div className="mt-24">
                 <div className="text-center mb-16">
                     <h2 className="text-2xl lg:text-5xl font-bold">Contact Us</h2>
-                    <p className="px-4 lg:px-96 leading-7 mt-6">We align leaders around a shared purpose and strategic story that catalyzes their business and brand to take action.</p>
+                    <p className="px-4 lg:px-96 leading-7 mt-6">Connect with us through our Contact Us section. Share your inquiries or feedback via our message form, and explore our location on the map. We look forward to hearing from you!</p>
                 </div>
-                <div className="flex flex-col lg:flex-row gap-4">
+                <div className="flex flex-col lg:flex-row gap-12 lg:gap-4">
                 <div className="mx-3">
                     <MapContainer className="w-full lg:w-[800px] h-[600px]" center={position} zoom={13} scrollWheelZoom={false}>
                         <TileLayer

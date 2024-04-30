@@ -11,7 +11,6 @@ const HomeSpot = () => {
         })
     },[])
     const [spotLength, setSpotLength] = useState(6);
-    console.log(spotLength, spots.length)
     return (
         <div className="mt-16">
             <div className="text-center mb-16">
