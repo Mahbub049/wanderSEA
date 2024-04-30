@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 import { Typewriter } from 'react-simple-typewriter'
 const Features = () => {
     return (
-        <div className="flex flex-col lg:flex-row gap-12 items-center mt-16 lg:mt-24">
-            <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-4 mx-2 lg:mx-0">
+        <div className="flex flex-col-reverse lg:flex-row gap-12 items-center mt-16 lg:mt-24">
+            <div className="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mx-2 lg:mx-0">
                 <div className='bg-[linear-gradient(45deg,rgba(19,19,24,0.60),rgba(19,19,24,0.60)),url("/src/assets/Banner/bali.jpg")] bg-cover bg-center text-white px-8 py-16 rounded-xl'>
                     <h3 className="text-2xl font-bold mb-4 mons">Tourist Spots Collection</h3>
                     <p className="poppins font-semibold">Curate your travel dreams with our &apos;Tourist Spots Collection&apos;—a treasure trove of destinations waiting to be explored and experienced.</p>
@@ -22,7 +22,7 @@ const Features = () => {
                 </div>
 
             </div>
-            <div className="flex-1 mx-3 text-center">
+            <div className="flex-1 mx-3 text-center lg:text-left">
                 <h2 className="mons text-xl lg:text-3xl font-extrabold mb-3 lg:mb-6 italic text-[#0c7acd]">Welcome to WanderSEA</h2>
                 <h1 className='mb-6 text-4xl lg:text-5xl mons font-bold'>
                     It&apos;s time to visit {' '}

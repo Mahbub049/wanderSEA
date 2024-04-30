@@ -40,7 +40,7 @@ const Contact = () => {
                     <h2 className="text-2xl lg:text-5xl font-bold">Contact Us</h2>
                     <p className="px-4 lg:px-96 leading-7 mt-6">Connect with us through our Contact Us section. Share your inquiries or feedback via our message form, and explore our location on the map. We look forward to hearing from you!</p>
                 </div>
-                <div className="flex flex-col lg:flex-row gap-12 lg:gap-4">
+                <div className="flex flex-col-reverse lg:flex-row gap-12 lg:gap-4">
                 <div className="mx-3">
                     <MapContainer className="w-full lg:w-[800px] h-[600px]" center={position} zoom={13} scrollWheelZoom={false}>
                         <TileLayer
@@ -54,7 +54,7 @@ const Contact = () => {
                         </Marker>
                     </MapContainer>
                     </div>
-                    <form onSubmit={handleSubmit(onSubmit)} className="flex-1 gap-2 mx-3 lg:mx-0 poppins">
+                    <form onSubmit={handleSubmit(onSubmit)} className="flex-1 gap-2 mx-6 lg:mx-0 poppins">
                         <div className='flex flex-col gap-3 mb-8 text-lg'>
                             <p className="font-semibold">Your Name</p>
                             <input {...register("name", { required: true })} className='py-2 px-3 w-full text-[#0c7acd]' type="text" placeholder='Your Name' />

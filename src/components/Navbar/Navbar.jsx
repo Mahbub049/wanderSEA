@@ -39,6 +39,8 @@ const Navbar = () => {
             <li><NavLink to={'/addspot'}>Add Tourists Spot</NavLink></li>
             <li><NavLink to={`/mylist`}>My List</NavLink></li></>
         }
+        <li><NavLink className="lg:hidden" to={'/login'}>Login</NavLink></li>
+        <li><NavLink className="lg:hidden" to={'/register'}>Register</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-100 mt-6 ">
@@ -89,9 +91,11 @@ const Navbar = () => {
                     </div>
                     <button onClick={signOutUser} className="btn text-white lg:ml-4 bg-[#0c7acd]">Log Out</button>
                 </> :
-                <div>
+                <div className="flex">
                     <Link to={'/login'} className="btn text-white ml-4 bg-[#0c7acd]">Log In</Link>
-                    <Link to={'/register'} className="btn text-white ml-4 bg-[#0c7acd]">Register</Link>
+                    <div className="hidden lg:flex">
+                        <Link to={'/register'} className="btn text-white ml-4 bg-[#0c7acd]">Register</Link>
+                    </div>
                 </div>}
             </div>
         </div>

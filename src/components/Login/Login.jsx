@@ -49,7 +49,7 @@ const Login = () => {
             <div className='container mx-auto'>
             <Navbar></Navbar>
             <div>
-                <div className="hero mt-16">
+                <div className="hero mt-24">
                     <div className="hero-content flex-col md:w-full w-[340px] lg:w-[800px] h-[600px]">
                         <div className="text-center">
                             <h1 className="text-5xl font-bold mb-3">Login now!</h1>
