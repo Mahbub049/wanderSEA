@@ -9,6 +9,7 @@ import { LuBath } from "react-icons/lu";
 import { TiWeatherCloudy } from "react-icons/ti";
 import { FaRegEye } from "react-icons/fa";
 import Footer from "../../../Footer/Footer";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const SpotDetails = () => {
     const spot = useLoaderData();
@@ -18,6 +19,10 @@ const SpotDetails = () => {
     // const spot = spots.find(spotId=>spotId.id === idInt);
     return (
         <div>
+            <HelmetProvider>
+            <Helmet>
+                <title>Home || WanderSEA</title>
+            </Helmet>
             <div className="container mx-auto">
                 <Navbar></Navbar>
                 <div className="mt-8 gap-10">
@@ -89,6 +94,7 @@ const SpotDetails = () => {
                 </div>
                 <Footer></Footer>
             </div>
+            </HelmetProvider>
         </div>
     );
 };

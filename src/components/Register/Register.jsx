@@ -49,9 +49,12 @@ const Register = () => {
         }
     }
     return (
-
-        <div className='container mx-auto'>
-                <ToastContainer />
+        <HelmetProvider>
+            <Helmet>
+                <title>Register || WanderSEA</title>
+            </Helmet>
+            <ToastContainer />
+            <div className='container mx-auto'>
             <Navbar></Navbar>
             <div>
                 <div className="hero mt-40 mb-32">

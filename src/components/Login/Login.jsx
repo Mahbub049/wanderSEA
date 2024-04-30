@@ -41,8 +41,12 @@ const Login = () => {
         .catch((error)=>{toast.error("Please Try Again!");})
     }
     return (
-        <div className='container mx-auto'>
-                <ToastContainer />
+        <HelmetProvider>
+            <Helmet>
+                <title>Login || WanderSEA</title>
+            </Helmet>
+            <ToastContainer />
+            <div className='container mx-auto'>
             <Navbar></Navbar>
             <div>
                 <div className="hero mt-24">
@@ -96,6 +100,7 @@ const Login = () => {
             </div>
             {/* <Footer></Footer> */}
         </div>
+        </HelmetProvider>
     );
 };
 
