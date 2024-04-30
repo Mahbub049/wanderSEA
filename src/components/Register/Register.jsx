@@ -49,12 +49,9 @@ const Register = () => {
         }
     }
     return (
-        <HelmetProvider>
-            <Helmet>
-                <title>Register || Radiant Residences</title>
-            </Helmet>
-            <ToastContainer />
-            <div className='container mx-auto'>
+
+        <div className='container mx-auto'>
+                <ToastContainer />
             <Navbar></Navbar>
             <div>
                 <div className="hero mt-40 mb-32">
@@ -113,7 +110,6 @@ const Register = () => {
             </div>
             {/* <Footer></Footer> */}
         </div>
-        </HelmetProvider>
     );
 };
 
