@@ -1,4 +1,5 @@
 import Banner from "../Banner/Banner";
+import Contact from "../Contact/Contact";
 import Country from "../Country/Country";
 import Features from "../Features/Features";
 import Footer from "../Footer/Footer";
@@ -14,6 +15,7 @@ const Home = () => {
                 <Features></Features>
                 <HomeSpot></HomeSpot>
                 <Country></Country>
+                <Contact></Contact>
                 <Footer></Footer>
             </div>
         </div>

@@ -89,7 +89,7 @@ const Update = () => {
                             <label className="input input-bordered input-info flex items-center gap-2">
                                 <MdDriveFileRenameOutline className="text-blue-500" />
                                 <input {...register("spotname", { required: true })} defaultValue={spotname} type="text" className="grow" placeholder="Tourist Spot Name" />
-                                {errors.spotname && <span>This field is required</span>}
+                                {errors.spotname && <span className="text-red-500">This field is required</span>}
                             </label>
                         </div>
                         <div className="flex-1">
@@ -98,7 +98,7 @@ const Update = () => {
                             </div>
                             <label className="input input-bordered input-info flex items-center gap-2">
                                 <IoMdGlobe className="text-blue-500"></IoMdGlobe>
-                                <select {...register("country", { required: true })} type="text" className="grow input-info border-0 outline-0 " placeholder="Country Name" defaultValue={country}>
+                                <select {...register("country", { required: true })} type="text" className="grow input-info bg-transparent border-0 outline-0 " placeholder="Country Name" defaultValue={country}>
                                     <option value="Bangladesh">Bangladesh</option>
                                     <option value="Indonesia">Indonesia</option>
                                     <option value="Thailand">Thailand</option>
@@ -106,7 +106,7 @@ const Update = () => {
                                     <option value="Vietnam">Vietnam</option>
                                     <option value="Cambodia">Cambodia</option>
                                 </select>
-                                {errors.country && <span>This field is required</span>}
+                                {errors.country && <span className="text-red-500">This field is required</span>}
                             </label>
                         </div>
                         </div>
@@ -118,7 +118,7 @@ const Update = () => {
                             <label className="input input-bordered input-info flex items-center gap-2">
                                 <FaMapMarkerAlt className="text-blue-500" />
                                 <input {...register("location", { required: true })} defaultValue={location} type="text" className="grow" placeholder="Location" />
-                                {errors.location && <span>This field is required</span>}
+                                {errors.location && <span className="text-red-500">This field is required</span>}
                             </label>
                         </div>
                         <div className="flex-1">
@@ -128,7 +128,7 @@ const Update = () => {
                             <label className="input input-bordered input-info flex items-center gap-2">
                                 <FaImage className="text-blue-500"></FaImage>
                                 <input {...register("image", { required: true })} defaultValue={image} type="text" className="grow" placeholder="Image URL" />
-                                {errors.image && <span>This field is required</span>}
+                                {errors.image && <span className="text-red-500">This field is required</span>}
                             </label>
                         </div>
                         </div>
@@ -139,7 +139,7 @@ const Update = () => {
                             <label className="input input-bordered input-info flex items-center gap-2">
                                 <MdOutlineDescription className="text-blue-500" />
                                 <input {...register("description", { required: true })} defaultValue={description} type="text" className="grow" placeholder="Short Description" />
-                                {errors.description && <span>This field is required</span>}
+                                {errors.description && <span className="text-red-500">This field is required</span>}
                             </label>
                         </div>
                         <div className="flex flex-col lg:flex-row gap-2 lg:gap-4 mb-3">
@@ -150,7 +150,7 @@ const Update = () => {
                             <label className="input input-bordered input-info flex items-center gap-2">
                                 <SiCashapp className="text-blue-500" />
                                 <input {...register("avg_cost", { required: true })} defaultValue={avg_cost} type="number" className="grow" placeholder="Average Cost" />
-                                {errors.avg_cost && <span>This field is required</span>}
+                                {errors.avg_cost && <span className="text-red-500">This field is required</span>}
                             </label>
                         </div>
                         <div className="flex-1">
@@ -172,7 +172,7 @@ const Update = () => {
                                 <label className="input input-bordered input-info flex items-center gap-2">
                                     <MdCardTravel className="text-blue-500" />
                                     <input {...register("travel", { required: true })} defaultValue={travel} type="text" className="grow" placeholder="Travel Time" />
-                                    {errors.travel && <span>This field is required</span>}
+                                    {errors.travel && <span className="text-red-500">This field is required</span>}
                                 </label>
                             </div>
                             <div className="flex-1">
@@ -182,7 +182,7 @@ const Update = () => {
                                 <label className="input input-bordered input-info flex items-center gap-2">
                                     <FaRegEye className="text-blue-500"></FaRegEye>
                                     <input {...register("visitors", { required: true })} type="text" defaultValue={visitors} className="grow" placeholder="Total Visitors Per Year" />
-                                    {errors.visitors && <span>This field is required</span>}
+                                    {errors.visitors && <span className="text-red-500">This field is required</span>}
                                 </label>
                             </div>
                         </div>

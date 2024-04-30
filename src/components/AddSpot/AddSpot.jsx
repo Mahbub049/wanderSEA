@@ -62,7 +62,7 @@ const AddSpot = () => {
                             <label className="input input-bordered input-info flex items-center gap-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="text-blue-500 w-4 h-4 opacity-70"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" /></svg>
                                 <input {...register("name", { required: true })} type="text" defaultValue={user.displayName} className="grow" placeholder="Username" />
-                                {errors.name && <span>This field is required</span>}
+                                {errors.name && <span className="text-red-500">This field is required</span>}
                             </label>
                         </div>
                         <div className="flex-1">
@@ -72,7 +72,7 @@ const AddSpot = () => {
                             <label className="input input-bordered input-info flex items-center gap-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="text-blue-500 w-4 h-4 opacity-70"><path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" /><path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" /></svg>
                                 <input {...register("email", { required: true })} type="email" defaultValue={user.email} className="grow" placeholder="User Email" />
-                                {errors.email && <span>This field is required</span>}
+                                {errors.email && <span className="text-red-500">This field is required</span>}
                             </label>
                         </div>
                         </div>
@@ -84,7 +84,7 @@ const AddSpot = () => {
                             <label className="input input-bordered input-info flex items-center gap-2">
                                 <MdDriveFileRenameOutline className="text-blue-500" />
                                 <input {...register("spotname", { required: true })} type="text" className="grow" placeholder="Tourist Spot Name" />
-                                {errors.spotname && <span>This field is required</span>}
+                                {errors.spotname && <span className="text-red-500">This field is required</span>}
                             </label>
                         </div>
                         <div className="flex-1">
@@ -93,7 +93,7 @@ const AddSpot = () => {
                             </div>
                             <label className="input input-bordered input-info flex items-center gap-2">
                                 <IoMdGlobe className="text-blue-500"></IoMdGlobe>
-                                <select {...register("country", { required: true })} type="text" className="grow input-info border-0 outline-0 " placeholder="Country Name">
+                                <select {...register("country", { required: true })} type="text" className="grow input-info bg-transparent border-0 outline-0 " placeholder="Country Name">
                                     <option value="Bangladesh">Bangladesh</option>
                                     <option value="Indonesia">Indonesia</option>
                                     <option value="Thailand">Thailand</option>
@@ -102,7 +102,7 @@ const AddSpot = () => {
                                     <option value="Cambodia">Cambodia</option>
                                 </select>
                                 {/* <input {...register("country", { required: true })} type="text" className="grow" placeholder="Country Name" /> */}
-                                {errors.country && <span>This field is required</span>}
+                                {errors.country && <span className="text-red-500">This field is required</span>}
                             </label>
                         </div>
                         </div>
@@ -114,7 +114,7 @@ const AddSpot = () => {
                             <label className="input input-bordered input-info flex items-center gap-2">
                                 <FaMapMarkerAlt className="text-blue-500" />
                                 <input {...register("location", { required: true })} type="text" className="grow" placeholder="Location" />
-                                {errors.location && <span>This field is required</span>}
+                                {errors.location && <span className="text-red-500">This field is required</span>}
                             </label>
                         </div>
                         <div className="flex-1">
@@ -124,7 +124,7 @@ const AddSpot = () => {
                             <label className="input input-bordered input-info flex items-center gap-2">
                                 <FaImage className="text-blue-500"></FaImage>
                                 <input {...register("image", { required: true })} type="text" className="grow" placeholder="Image URL" />
-                                {errors.image && <span>This field is required</span>}
+                                {errors.image && <span className="text-red-500">This field is required</span>}
                             </label>
                         </div>
                         </div>
@@ -135,7 +135,7 @@ const AddSpot = () => {
                             <label className="input input-bordered input-info flex items-center gap-2">
                                 <MdOutlineDescription className="text-blue-500" />
                                 <input {...register("description", { required: true })} type="text" className="grow" placeholder="Short Description" />
-                                {errors.description && <span>This field is required</span>}
+                                {errors.description && <span className="text-red-500">This field is required</span>}
                             </label>
                         </div>
                         <div className="flex flex-col lg:flex-row gap-2 lg:gap-4 mb-3">
@@ -146,7 +146,7 @@ const AddSpot = () => {
                             <label className="input input-bordered input-info flex items-center gap-2">
                                 <SiCashapp className="text-blue-500" />
                                 <input {...register("avg_cost", { required: true })} type="number" className="grow" placeholder="Average Cost" />
-                                {errors.avg_cost && <span>This field is required</span>}
+                                {errors.avg_cost && <span className="text-red-500">This field is required</span>}
                             </label>
                         </div>
                         <div className="flex-1">
@@ -156,7 +156,7 @@ const AddSpot = () => {
                             <label className="input input-bordered input-info flex items-center gap-2">
                                 <TiWeatherCloudy className="text-blue-500"></TiWeatherCloudy>
                                 <input {...register("seasonality", { required: true })} type="text" className="grow" placeholder="Seasonality" />
-                                {errors.seasonality && <span>This field is required</span>}
+                                {errors.seasonality && <span className="text-red-500">This field is required</span>}
                             </label>
                         </div>
                         </div>
@@ -168,7 +168,7 @@ const AddSpot = () => {
                                 <label className="input input-bordered input-info flex items-center gap-2">
                                     <MdCardTravel className="text-blue-500" />
                                     <input {...register("travel", { required: true })} type="text" className="grow" placeholder="Travel Time" />
-                                    {errors.travel && <span>This field is required</span>}
+                                    {errors.travel && <span className="text-red-500">This field is required</span>}
                                 </label>
                             </div>
                             <div className="flex-1">
@@ -178,7 +178,7 @@ const AddSpot = () => {
                                 <label className="input input-bordered input-info flex items-center gap-2">
                                     <FaRegEye className="text-blue-500"></FaRegEye>
                                     <input {...register("visitors", { required: true })} type="text" className="grow" placeholder="Total Visitors Per Year" />
-                                    {errors.visitors && <span>This field is required</span>}
+                                    {errors.visitors && <span className="text-red-500">This field is required</span>}
                                 </label>
                             </div>
                         </div>
