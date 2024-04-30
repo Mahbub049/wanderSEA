@@ -50,11 +50,11 @@ const AddSpot = () => {
             <div className="container mx-auto">
                 <Navbar></Navbar>
                 <div className="bg-[linear-gradient(45deg,rgba(19,19,24,0.50),rgba(19,19,24,0.50)),url('/src/assets/Banner/bali.jpg')] bg-center bg-cover py-20 text-center my-6 rounded-xl mx-3 lg:mx-0">
-                    <p className="text-4xl  font-bold text-[#9aeafa] mons">Add Tourist Spot</p>
+                    <p className="lg:text-4xl text-2xl font-bold text-[#9aeafa] mons">Add Tourist Spot</p>
                 </div>
                 <div className="mt-8">
-                    <form onSubmit={handleSubmit(onSubmit)} className="poppins">
-                        <div className="flex gap-4 mb-3">
+                    <form onSubmit={handleSubmit(onSubmit)} className="poppins mx-3 lg:mx-0">
+                        <div className="flex flex-col lg:flex-row gap-2 lg:gap-4 mb-3">
                             <div className="flex-1">
                             <div className="label">
                                 <span className="label-text font-semibold text-[#0c7acd]">User Name</span>
@@ -76,7 +76,7 @@ const AddSpot = () => {
                             </label>
                         </div>
                         </div>
-                        <div className="flex gap-4 mb-3">
+                        <div className="flex flex-col lg:flex-row gap-2 lg:gap-4 mb-3">
                             <div className="flex-1">
                             <div className="label">
                                 <span className="label-text font-semibold text-[#0c7acd]">Tourist Spot Name</span>
@@ -106,7 +106,7 @@ const AddSpot = () => {
                             </label>
                         </div>
                         </div>
-                        <div className="flex gap-4 mb-3">
+                        <div className="flex flex-col lg:flex-row gap-2 lg:gap-4 mb-3">
                             <div className="flex-1">
                             <div className="label">
                                 <span className="label-text font-semibold text-[#0c7acd]">Location</span>
@@ -138,7 +138,7 @@ const AddSpot = () => {
                                 {errors.description && <span>This field is required</span>}
                             </label>
                         </div>
-                        <div className="flex gap-4 mb-3">
+                        <div className="flex flex-col lg:flex-row gap-2 lg:gap-4 mb-3">
                             <div className="flex-1">
                             <div className="label">
                                 <span className="label-text font-semibold text-[#0c7acd]">Average Cost</span>
@@ -160,7 +160,7 @@ const AddSpot = () => {
                             </label>
                         </div>
                         </div>
-                        <div className="flex gap-4 mb-6">
+                        <div className="flex flex-col lg:flex-row gap-2 lg:gap-4 mb-6">
                             <div className="flex-1">
                                 <div className="label">
                                     <span className="label-text font-semibold text-[#0c7acd]">Travel Time</span>
